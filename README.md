@@ -12,6 +12,8 @@ Create a .env file in the project root directory.
 Add the following keys: GROQ_API_KEY=your-groq-api-key
 # Phase 3: Building Streamlit Interface
 Task 3.1: Create Streamlit App File
+
 Task 3.2: Implement Basic Streamlit Interface 
+
 Task 3.3: Run Streamlit App
 
