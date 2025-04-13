@@ -26,7 +26,7 @@ def fetch_latest_news(query):
         return None
 
 # Function to summarize news using LangChain
-@st.cache(ttl=300)  # Cache results for 5 minutes
+@st.cache(ttl=300)  
 def summarize_news(query):
     return llm_chain.run({'query': query})
 
@@ -34,7 +34,7 @@ def summarize_news(query):
 if 'latest_news' not in st.session_state:
     st.session_state.latest_news = None
 if 'last_updated' not in st.session_state:
-    st.session_state.last_updated = datetime.now() - timedelta(minutes=5)  # Force initial update
+    st.session_state.last_updated = datetime.now() - timedelta(minutes=5) 
 
 st.title('Equity Research News Tool')
 st.write('Enter your query to get the latest news articles summarized.')
